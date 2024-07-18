@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.stldemo">
+    package="com.example.demo2">
 
     <application
         android:label="demo2"
@@ -31,7 +31,7 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="com.example.stldemo" android:host="callback"/>
+                <data android:scheme="com.example.demo2" android:host="callback"/>
             </intent-filter>
         </activity>
         

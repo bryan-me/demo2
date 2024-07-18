@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // Configure the Keycloak details
       const clientId = 'push-messenger';
       const clientSecret = 'eca09a20-27db-4141-8976-33886e3eecf8';
-      const redirectUri = 'com.example.stldemo://callback';
+      const redirectUri = 'com.example.demo2://callback';
       const issuer = 'http://192.168.250.209:8070/auth/realms/Push';
 
       // Construct the authorization URL
@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // Launch the browser for user authentication
       final result = await FlutterWebAuth.authenticate(
         url: authUrl,
-        callbackUrlScheme: 'com.example.stldemo',
+        callbackUrlScheme: 'com.example.demo2',
       );
 
       // Extract the authorization code from the redirect URI
@@ -146,7 +146,7 @@ class HomePage extends StatelessWidget {
 //   Future<void> _authenticate() async {
 //     final clientId = 'push-messenger';
 //     final clientSecret = 'your-client-secret';
-//     final redirectUri = 'com.example.stldemo://callback';
+//     final redirectUri = 'com.example.demo2://callback';
 //     final issuer = 'http://192.168.250.209:8070/auth/realms/Push';
 
 //     final authUrl =
